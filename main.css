@@ -1,0 +1,126 @@
+* {
+    background-color: #2f2f2f;
+    color: white;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+    padding: 1.25rem 0.625rem;
+}
+
+header a {
+    float: left;
+    text-align: center;
+    padding: 0.75rem;
+    font-family: arial, serif;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 1.5625rem;
+    border-radius: 0.25rem;
+    margin-right: 1rem;
+    border: 0.0625rem dashed white;
+    transform: scale(100%);
+    transition: all .2s ease-out;
+}
+
+header a.logo {
+    font-size: 1.5625rem;
+    margin-left: 1rem;
+    width: 16rem;
+}
+
+header a:hover {
+    border: 0.0625rem dashed aqua;
+    transform: scale(109%);
+    filter: drop-shadow(8px 8px 10px #252525);
+}
+
+.header-right {
+    float: right;
+}
+
+embed {
+    width: 100%;
+}
+
+
+main {
+    font-family: Cursor, serif;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    max-width: 55rem;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.25rem;
+    text-decoration: none;
+    padding: 1.25rem;
+    border: 0.0625rem dashed white;
+    transform: scale(100%);
+    transition: all .2s ease-out;
+}
+
+.card:hover {
+    border: 0.0625rem dashed aqua;
+    transform: scale(102%);
+    filter: drop-shadow(8px 8px 10px #252525);
+}
+
+.card-header {
+    display: flex;
+    height: 6.5rem;
+    align-items: center;
+}
+
+.card-title-image {
+    width: 6.5rem;
+}
+
+.card-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.75rem;
+    font-weight: bold;
+}
+
+.card-footer {
+    align-self: flex-end;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+iframe {
+    position: absolute;
+    width: 55rem;
+    height: 200%;
+    border: none;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 31.25rem) {
+    header {
+        position: static;
+    }
+
+    header a {
+        margin: 0;
+    }
+
+    header a.logo {
+        margin-left: 0;
+        width: 92%;
+    }
+
+    .header-right {
+        padding: 0;
+        float: none;
+    }
+}
