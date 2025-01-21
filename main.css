@@ -17,7 +17,7 @@ header a {
     padding: 0.75rem;
     font-family: arial, serif;
     text-decoration: none;
-    font-size: 1.125rem;
+    font-size: 1.12rem;
     font-weight: bold;
     line-height: 1.5625rem;
     border-radius: 0.25rem;
@@ -28,7 +28,7 @@ header a {
 }
 
 header a.logo {
-    font-size: 1.5625rem;
+    font-size: 1.55rem;
     margin-left: 1rem;
     width: 16rem;
 }
@@ -42,11 +42,6 @@ header a:hover {
 .header-right {
     float: right;
 }
-
-embed {
-    width: 100%;
-}
-
 
 main {
     font-family: Cursor, serif;
@@ -86,7 +81,7 @@ main {
 .card-title {
     width: 100%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 0.75rem;
     font-weight: bold;
 }
@@ -97,20 +92,14 @@ main {
     font-style: italic;
 }
 
-iframe {
-    position: absolute;
-    width: 55rem;
-    height: 200%;
-    border: none;
-    overflow: hidden;
-}
-
 @media screen and (max-width: 31.25rem) {
     header {
         position: static;
     }
 
     header a {
+        padding: 0.60rem;
+        font-size: 1rem;
         margin: 0;
     }
 
