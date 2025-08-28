@@ -51,6 +51,15 @@ main {
     margin: auto;
 }
 
+main.lkt-main {
+    text-align: center;
+}
+
+
+.lkt-header {
+    width: 100%;
+}
+
 .card {
     display: flex;
     flex-direction: column;
