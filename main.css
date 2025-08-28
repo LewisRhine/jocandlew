@@ -125,4 +125,8 @@ main.lkt-main {
         padding: 0;
         float: none;
     }
+
+    .lkt-header {
+        width: 24rem;
+    }
 }
