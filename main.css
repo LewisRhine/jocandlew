@@ -60,6 +60,11 @@ main.lkt-main {
     width: 100%;
 }
 
+.lkt-header img {
+    object-fit: contain;
+}
+
+
 .card {
     display: flex;
     flex-direction: column;
@@ -124,9 +129,5 @@ main.lkt-main {
     .header-right {
         padding: 0;
         float: none;
-    }
-
-    .lkt-header {
-        width: 24rem;
     }
 }
