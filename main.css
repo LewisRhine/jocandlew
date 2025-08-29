@@ -49,6 +49,7 @@ main {
     line-height: 1.5rem;
     max-width: 55rem;
     margin: auto;
+    padding-bottom: 5rem;
 }
 
 main.lkt-main {
@@ -64,6 +65,11 @@ main.lkt-main {
     object-fit: contain;
 }
 
+.lkt-credits {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
 
 .card {
     display: flex;
@@ -129,6 +135,10 @@ main.lkt-main {
     .header-right {
         padding: 0;
         float: none;
+    }
+
+    main {
+        font-size: 1rem;
     }
 
     main.lkt-main {
