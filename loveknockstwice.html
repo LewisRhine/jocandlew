@@ -6,6 +6,9 @@
     <title>Joc & Lew - Get a hold of us</title>
     <link rel="icon" type="image/x-icon" href="./JocAndLewPodLogo.png">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
 </head>
 <body>
 <header>
@@ -24,10 +27,16 @@
     <div class="lkt-header">
         <img class="lkt-header" src="assets/LoveKnocksTwice.png" alt="Love Knocks Twice">
     </div>
-    <p><strong>While waiting to hear back from his date, Jack spends an evening screening old VHS tapes for entertaining
-        undiscovered media. But not all footage should be found. </strong></p>
+    <p>While waiting to hear back from his date, Jack spends an evening screening old VHS tapes for entertaining
+        undiscovered media. But not all footage should be found. </p>
 
-    <p><a href="https://forms.gle/KPrZNJWf5ifs5h8s9" target="_blank">Seen the film? Fill out our feedback form!</a></p>
+
+    <a class="card"
+       href="https://forms.gle/KPrZNJWf5ifs5h8s9"
+       target="_blank">
+        <strong>Seen the film? Fill out our feedback form!</strong>
+    </a>
+
 
     <div>
         <p>WHERE TO SEE:</p>
@@ -51,7 +60,7 @@
         </div>
         <div>
             <p>
-                <span><strong>Starting</strong></span><br>
+                <span><strong>Starring</strong></span><br>
                 <span>Devin Alexander</span><br>
                 <span>Jason Whitmarsh</span><br>
                 <span>Jocelyn Bakacs</span><br>
@@ -81,6 +90,45 @@
             </article>
         </div>
     </div>
+
+    <div>
+        <br>
+        <br>
+        <p><strong>Are you interested in working on or being in our next film? Contact Us!</strong> -
+            <i>jocandlew@gmail.com</i>
+        </p>
+    </div>
 </main>
+<div class="embla">
+    <div class="embla__container">
+        <div class="embla__slide">
+            <img src="assets/lktstills/still1.png" alt="Love Knocks Twice skill 1" width="100%" height="auto">
+        </div>
+        <div class="embla__slide">
+            <img src="assets/lktstills/still6.png" alt="Love Knocks Twice skill 1" width="100%" height="auto">
+        </div>
+        <div class="embla__slide">
+            <img src="assets/lktstills/still7.png" alt="Love Knocks Twice skill 1" width="100%" height="auto">
+        </div>
+        <div class="embla__slide">
+            <img src="assets/lktstills/still12.png" alt="Love Knocks Twice skill 1" width="100%" height="auto">
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    const emblaNode = document.querySelector('.embla')
+    const options = {loop: true}
+    const plugins = [EmblaCarouselAutoplay()]
+    EmblaCarousel(emblaNode, options, plugins)
+
+    document.addEventListener("scroll", () => {
+        if (window.scrollY < 720) return
+
+        const header = document.querySelector("header")
+
+        header.style.zIndex = emblaNode.getBoundingClientRect().top <= 95 ? "0" : "2"
+    });
+</script>
 </body>
 </html>
