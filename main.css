@@ -71,18 +71,6 @@ main.lkt-main {
     justify-content: space-around;
 }
 
-.lkt-poster {
-    z-index: 1;
-    padding-top: 10rem;
-    transform: scale(100%);
-    text-align: center;
-}
-
-.lkt-poster img {
-    object-fit: contain;
-    height: 100vh;
-}
-
 .card {
     display: flex;
     z-index: 1;
