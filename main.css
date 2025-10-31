@@ -113,6 +113,11 @@ main.lkt-main {
     font-style: italic;
 }
 
+.lkt-iframe {
+    width: 100%;
+    height: 415px;
+}
+
 @media screen and (max-width: 31.25rem) {
     header {
         position: static;
@@ -144,5 +149,10 @@ main.lkt-main {
 
     main.lkt-main {
         text-align: center;
+    }
+
+    .lkt-iframe {
+        width: 100%;
+        height: 215px;
     }
 }
