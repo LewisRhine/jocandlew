@@ -17,20 +17,24 @@ async function submitRsvp() {
     try {
         fieldset.disabled = true
         submit.value = "Submitting..."
-        await fetch("https://rsvparty.jocandlew.com/Rsvp", {
+        const response = await fetch("https://rsvparty.jocandlew.com/Rsvp", {
             method: "POST", headers: {'Content-Type': 'application/json'}, body: JSON.stringify({
                 "Name": name.value,
                 "NumberInParty": inParty.value,
                 "MoveGuess": movieGuess.value ?? null,
                 "Email": email.value ?? null,
-                "getUpdates": updates.disabled ? false : updates.value,
-                "getReminder": reminder.disabled ? false : reminder.value,
+                "getUpdates": updates.disabled ? false : updates.checked,
+                "getReminder": reminder.disabled ? false : reminder.checked,
 
             })
         })
-        window.location.href = 'rsvpcomplete.html';
+
+        if (response.ok) {
+            window.location.href = 'rsvpcomplete.html';
+        } else {
+            window.alert("Something went wrong!");
+        }
     } catch (error) {
-        window.alert("Something went wrong!");
     } finally {
         fieldset.disabled = false
         submit.value = "Submit"
