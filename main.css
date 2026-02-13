@@ -83,7 +83,7 @@ main.lkt-main {
     transition: all .2s ease-out;
 }
 
-.card:hover {
+.card:active:hover {
     border: 0.0625rem dashed aqua;
     transform: scale(102%);
     filter: drop-shadow(8px 8px 10px #252525);

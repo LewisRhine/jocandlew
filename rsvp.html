@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joc & Lew - Get a hold of us</title>
     <link rel="icon" type="image/x-icon" href="./JocAndLewPodLogo.png">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="rsvp.css">
     <script defer src="https://umami.jocandlew.com/script.js"
             data-website-id="06b9cf3a-f2b6-4c4f-8335-d8fd9b166333"></script>
     <script defer src="formRsvp.js"></script>
@@ -24,11 +25,88 @@
     </nav>
 </header>
 <main>
-    <form>
-        <input id="text" type="text" name="name" placeholder="Name" required>
-        <input id="number" type="number" name="guests" placeholder="number of guest" required>
-        <input id="submit" type="submit">
-    </form>
+    <h1>🥳 Cinema Surprise Party 🥳</h1>
+    <br>
+    <h2>March 8th 2026 at <a href="https://www.lastpicturehouse.com/home" target="_blank">The Last Picture House</a> 6PM
+    </h2>
+    <br>
+    <p>
+        We are so excited to be hosting our first Cinema Surprise Party! The event is <strong>FREE</strong> to attend,
+        so arrive early
+        and
+        grab a fun concession! We plan to show something in the “so bad it’s good/b-movie” genre. Before the movie, we
+        will
+        introduce the night about our personal philosophies about the movies we hope to program (if we are lucky enough
+        to
+        have enough interest to keep doing events) and a small history about the movie we plan to play. We will have a
+        silly
+        giveaway and everyone that comes will get a custom zine. It should be a fun, silly night.
+    </p>
+    <p>If you are here either we have directly invited you or someone that we invited, invited you! If you feel like
+        someone would enjoy this event, you are free to directly invite them but please do not share this event publicly
+        on social media! Please RSVP as it makes it easier to plan, thank you!</p>
+    <p>The film is just barely over 90 minutes!</p>
+    <br>
+    <div class="warring">Warning!</div>
+    <br>
+    This movie contains problematic elements we don't condone
+    <br>
+    <br>
+    - 18+ only -
+    <br>
+    - Nudity -
+    <br>
+    - Violence -
+    <br>
+    <br>
+    Email us for any concerns <strong><a href="mailto:jocandlew@gmail.com">jocandlew@gmail.com</a></strong>
+    <br>
+    <br>
+    <br>
+    Hints for the film:
+    <br>
+    <div class="chip">Copy Cat</div>
+    <div class="chip">Bad Wig</div>
+    <div class="chip">Katanas</div>
+    <div class="chip">Acclaimed "So Bad It's Good"</div>
+    <div class="chip">Awkward Dialog</div>
+    <div class="chip">Angry Police Chef</div>
+    <div class="chip">Buddy Cop</div>
+    <div class="chip">“Ladies Man” Main Character</div>
+    <div class="chip">Great Reaction Shots</div>
+    <div class="chip">Awkward Sex</div>
+    <div class="chip">Bad Dubbing</div>
+    <br>
+    <br>
+    <br>
+    <div class="from-container">
+        <form onsubmit="submitRsvp(); return false;">
+            <fieldset id="fieldset">
+                <label for="name">Name:</label>
+                <input id="name" type="text" required>
+                <br>
+                <label for="inParty">Number In Party:</label>
+                <input id="inParty" type="number" required value="1" style="width: 5rem">
+                <br>
+                <label for="movieGuess">Guess the movie (Optional):</label>
+                <input id="movieGuess" type="text">
+                <br>
+                <label for="email">Email (Optional):</label>
+                <input id="email" type="email">
+                <br>
+                <div>
+                    <input id="updates" type="checkbox" disabled>
+                    <label for="updates">Do you want updates about other things we're doing?</label>
+                </div>
+                <div>
+                    <input id="reminder" type="checkbox" disabled>
+                    <label for="reminder">Do you want a reminder email a day before?</label>
+                </div>
+                <br>
+                <input class="card" id="submit" type="submit">
+            </fieldset>
+        </form>
+    </div>
 </main>
 </body>
 </html>
