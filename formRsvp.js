@@ -7,6 +7,8 @@ const reminder = document.getElementById('reminder');
 const fieldset = document.getElementById('fieldset');
 const submit = document.getElementById('submit');
 
+const full = document.getElementById('full');
+const form = document.getElementById('form');
 
 email.oninput = event => {
     updates.disabled = !event.target.value;
@@ -40,3 +42,21 @@ async function submitRsvp() {
         submit.value = "Submit"
     }
 }
+
+async function getAttendingCount() {
+    try {
+        const response = await fetch("http://localhost:5012/Rsvp/attendingcount")
+        if (!response.ok) return
+
+        const {numberOfAttendees} = await response.json()
+
+        if (numberOfAttendees >= 42) {
+            form.hidden = true
+            full.hidden = false
+        }
+    } catch (e) {
+
+    }
+}
+
+getAttendingCount()
