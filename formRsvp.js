@@ -45,7 +45,7 @@ async function submitRsvp() {
 
 async function getAttendingCount() {
     try {
-        const response = await fetch("http://localhost:5012/Rsvp/attendingcount")
+        const response = await fetch("https://rsvparty.jocandlew.com/Rsvp/attendingcount")
         if (!response.ok) return
 
         const {numberOfAttendees} = await response.json()
